@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamForm.Views.AboutPage"
              xmlns:vm="clr-namespace:XamForm.ViewModels"
+             Visual="Material"   
              Title="{Binding Title}">
     
     <ContentPage.BindingContext>
@@ -19,9 +20,15 @@
         <Frame BackgroundColor="Coral" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
             <StackLayout>
                 <Entry Placeholder="Username"/>
-                <Button Text="Login"/>
+                <Entry Placeholder="Password" IsPassword="True"/>
+                <Button Text="Login" />
             </StackLayout>
         </Frame>
+
+        <DatePicker/>
+
+        <Slider/>
+        
     </StackLayout>
 
 </ContentPage>
